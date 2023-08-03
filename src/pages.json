@@ -1,0 +1,161 @@
+{
+  "pages": [
+    {
+      "name": "index",
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "name": "profile",
+      "path": "pages/profile/profile",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "name": "shop",
+      "path": "pages/shop/shop",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "name": "list",
+      "path": "pages/list/list",
+      "style": {
+        "navigationBarTitleText": "订单",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages/test",
+      "pages": [
+        {
+          "name": "act",
+          "path": "act",
+          "hide": true,
+          "style": {
+            "navigationBarTitleText": "活动",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "name": "form",
+          "path": "form",
+          "hide": true,
+          "style": {
+            "navigationBarTitleText": "表单",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "name": "gen",
+          "path": "gen",
+          "style": {
+            "navigationBarTitleText": "基础",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "name": "gen2",
+          "path": "gen2",
+          "style": {
+            "navigationBarTitleText": "表单",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "name": "mixue",
+          "path": "mixue",
+          "style": {
+            "navigationBarTitleText": "蜜雪冰城列表",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "name": "order",
+          "path": "order",
+          "style": {
+            "navigationBarTitleText": "订单结算",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "name": "shoplist",
+          "path": "shoplist",
+          "style": {
+            "navigationBarTitleText": "商品货架",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/com",
+      "pages": [
+        {
+          "name": "gen",
+          "path": "gen",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "name": "skuCalc",
+          "path": "skuCalc",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "@navTxtStyle",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "@navBgColor",
+    "backgroundColor": "@bgColor"
+  },
+  "tabBar": {
+    "custom": true,
+    "fontSize": "24rpx",
+    "color": "#333",
+    "selectedColor": "#409EFF",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "icon": "home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "icon": "shop",
+        "text": "商铺"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "icon": "list",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "icon": "person",
+        "text": "我的"
+      }
+    ]
+  },
+  "workers": "static/workers"
+}

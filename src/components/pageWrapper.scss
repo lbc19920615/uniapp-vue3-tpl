@@ -1,0 +1,20 @@
+.page-wrapper {
+  height: 100%;
+  &__content {
+    height: calc(100% - var(--navigation-bar-height) - var(--tabbar-height) - var(--safe-area-inset-top));
+    //height: 100%;
+    overflow: hidden;
+  }
+}
+.page-wrapper--noTabbar {
+  --tabbar-height: 0;
+  .page-wrapper__content {
+    height: calc(100% - var(--navigation-bar-height) - var(--safe-area-inset-top));
+  }
+}
+
+.page-wrapper--no-nav {
+  .page-wrapper__content {
+    height: calc(100% - var(--tabbar-height) - var(--safe-area-inset-top));
+  }
+}
