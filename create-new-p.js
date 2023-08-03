@@ -21,6 +21,9 @@ let rootFiles = fs.readdirSync('./').map(v => {
 
 console.log(rootFiles);
 rootFiles.forEach(v => {
+    if (v.path.includes('README.md')) {
+        return;
+    }
     fse.copySync(v.path, join(DestPath, v.path) )
 })
 
